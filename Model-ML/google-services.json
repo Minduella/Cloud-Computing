@@ -1,0 +1,47 @@
+{
+    "project_info": {
+      "project_number": "852069596535",
+      "project_id": "kaliatra",
+      "storage_bucket": "kaliatra.firebasestorage.app"
+    },
+    "client": [
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:852069596535:android:0b9fe3fff6f79d90c07572",
+          "android_client_info": {
+            "package_name": "com.dicoding.kaliatra"
+          }
+        },
+        "oauth_client": [
+          {
+            "client_id": "852069596535-8bhk7a8be7vl7328qvu1gjed182mjirp.apps.googleusercontent.com",
+            "client_type": 1,
+            "android_info": {
+              "package_name": "com.dicoding.kaliatra",
+              "certificate_hash": "ee0c34aaf197fbf8fa64d297ef65d271bf123a67"
+            }
+          },
+          {
+            "client_id": "852069596535-r5fhd7grji7f89fv37ethgdag7leb9v8.apps.googleusercontent.com",
+            "client_type": 3
+          }
+        ],
+        "api_key": [
+          {
+            "current_key": "AIzaSyBVmDU5awSzgt76CN7kV2vNOc3YU49wfW4"
+          }
+        ],
+        "services": {
+          "appinvite_service": {
+            "other_platform_oauth_client": [
+              {
+                "client_id": "852069596535-l7o6j1vu683khumn7gd7m7cb2peeikur.apps.googleusercontent.com",
+                "client_type": 3
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "configuration_version": "1"
+  }
