@@ -111,8 +111,23 @@ Sebuah API Backend Service yang menyediakan kumpulan aksara-aksara bali.API ini 
             "createdAt": "2024-12-07T02:26:28.944Z"
         },
 ```
+#### Hapus Prediksi Histories
 
-
+```http
+   /predict/histories/:id
+```
+- Method
+  - DELETE
+-  Header
+  - ```Authorization``` value ```Bearer <token>```
+- Response
+```
+{
+    "status": "success",
+    "message": "Prediction with ID 7cd73138-8043-4144-b6d4-8208f5d76a66 deleted successfully"
+}
+```
+untuk :id berasal dari id prediction bukan user id
 
 
 ## Bug/Error
