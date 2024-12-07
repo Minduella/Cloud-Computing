@@ -9,6 +9,7 @@ const {
 const {
   savePrediction,
   getAllPredictions,
+  deletePrediction,
 } = require("../services/firestoreservice");
 const { errorHandler, errHandler } = require("../utils/errorHandler");
 const verifyToken = require("../middleware/verifyToken");
@@ -130,7 +131,6 @@ router.post("/predict/handwrite", verifyToken, (req, res, next) => {
 });
 router.get("/predict/latest", verifyToken, async (req, res, next) => {
   try {
-    // Ambil prediksi terbaru berdasarkan userId
     const predictions = await getAllPredictions(req.user.id);
     if (predictions.length === 0) {
       return res.status(404).json({
@@ -139,9 +139,7 @@ router.get("/predict/latest", verifyToken, async (req, res, next) => {
       });
     }
 
-    // Ambil prediksi terakhir yang disimpan
-    const latestPrediction = predictions[0]; // Ambil prediksi pertama (terbaru) berdasarkan orderBy
-
+    const latestPrediction = predictions[0];
     res.status(200).json({
       status: "success",
       message: "Latest prediction retrieved successfully",
@@ -158,6 +156,28 @@ router.get("/predict/histories", verifyToken, async (req, res, next) => {
       status: "success",
       message: "Histories retrieved successfully",
       data: predictions,
+    });
+  } catch (err) {
+    next(errHandler(err));
+  }
+});
+router.delete("/predict/histories/:id", verifyToken, async (req, res, next) => {
+  try {
+    const { id } = req.params;
+    const userId = req.user.id;
+
+    if (!id) {
+      return res.status(400).json({
+        status: "fail",
+        message: "Prediction ID is required",
+      });
+    }
+
+    await deletePrediction(userId, id);
+
+    res.status(200).json({
+      status: "success",
+      message: `Prediction with ID ${id} deleted successfully`,
     });
   } catch (err) {
     next(errHandler(err));
