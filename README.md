@@ -17,4 +17,6 @@ The following tools and technologies were utilized in the development of this cl
 7. **Postman** - API testing and documentation tool.
 
 ## Project Description
-This project focuses on implementing cloud computing solutions using modern tools and technologies. It integrates Google Cloud services and Firebase for authentication backend system.
+This project focuses on implementing cloud computing solutions using modern tools and technologies. It integrates Google Cloud services and Firebase for authentication backend system for machine learning model with mobile development side.
+
+## API
