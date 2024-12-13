@@ -4,6 +4,7 @@
 | Name                   | ID            | Institution                            | Role               | Status  |
 |------------------------|---------------|---------------------------------------|--------------------|---------|
 | I Made Andre Sentanu  | c113b4ky1852  | Institut Teknologi dan Bisnis STIKOM Bali | Cloud Computing    | Active  |
+| Putu Agung Irvan Cahyadi | c113b4ky3528 | Institut Teknologi dan Bisnis STIKOM Bali | Cloud Computing    | Active  |
 
 ## Tools Used
 The following tools and technologies were utilized in the development of this cloud computing project:
