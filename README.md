@@ -1,4 +1,4 @@
-# Cloud Computing Project
+# Kaliatra Cloud Computing Division
 
 ## Team Members
 | Name                   | ID            | Institution                            | Role               | Status  |
